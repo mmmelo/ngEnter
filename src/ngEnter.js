@@ -1,11 +1,8 @@
 (function(){
-
   'use strict'
-
   angular
   .module('ngEnter',[])
   .directive('ngEnter', ngEnter);
-
   function ngEnter(){
     return function(scope, element, attrs) {
        element.bind("keydown keypress", function(event) {
@@ -18,6 +15,4 @@
        });
    };
   }
-
-
 })();
